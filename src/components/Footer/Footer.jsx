@@ -1,7 +1,7 @@
-import { Facebook, Favorite, Instagram, LinkedIn, Pinterest } from '@material-ui/icons'
+import { Facebook, Favorite, Instagram, Pinterest } from '@material-ui/icons'
 import React from 'react'
 import './Footer.css';
-import logo from "../assets/logo/apex-legends-symbol-white.png"
+import logo from "../../assets/logo/apex-legends-symbol-white.png"
 
 
 export const Footer = () => {

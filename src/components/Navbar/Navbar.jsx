@@ -1,6 +1,6 @@
 import { AccountCircleOutlined, FavoriteBorderOutlined, Search, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
-import logo from '../assets/logo/apex-legends-symbol-white.png'
+import logo from '../../assets/logo/apex-legends-symbol-white.png'
 import './Navbar.css'
 
 function Navbar(){
@@ -12,8 +12,8 @@ function Navbar(){
             <span id="store-name">pex Store</span>
         </div>
         <div className="menu">
-            <span><a href="index.html">Home</a></span><span>
-                <a href="./components/pages/prodcuts/products.html">Products</a>
+            <span><a href="#">Home</a></span><span>
+                <a href="#">Products</a>
             </span>
         </div>
         <div className="nav-content">

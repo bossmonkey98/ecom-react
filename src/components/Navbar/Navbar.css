@@ -15,6 +15,7 @@
     border-bottom:1px solid var(--primary-color);
     border-top:1px solid var(--primary-color);
     border-radius: 0;
+    color: var(--primary-color);
 }
 
 .logo{
@@ -83,15 +84,23 @@
     width: 40%;
     display: flex;
     justify-content:end;
+    color: var(--secondary-color);
 }
+
 .icon{
     margin: 0 5px;
+}
+
+.icon:hover{
+    color: var(--primary-color);
 }
 
 .query{
     border: none;
     width: 100%;
-    padding:4px;
+    padding:8px;
+    border-radius: 8px;
+    outline: none;
 }
 
 .search-bar{
@@ -100,7 +109,7 @@
     justify-content: space-between;
     width: 90%;
     margin: 0 10px;
-    border: 0.5px solid var(--primary-color);
-    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
     background-color: var(--secondary-color);
 }

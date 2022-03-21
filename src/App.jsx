@@ -1,11 +1,11 @@
 import './App.css';
-import  Home  from './pages/Home';
-
-
+import { Footer } from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Navbar/>
+      <Footer/>
     </div>
   );
 }
