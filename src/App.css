@@ -1,0 +1,15 @@
+:root{
+    --primary-color:red;
+    --secondary-color:#fff;
+    --bg-color:rgba(37, 37, 37, 0.589);
+}
+
+
+body{
+    background-image: url(./assets/images/bg-red.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+}
