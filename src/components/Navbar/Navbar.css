@@ -83,7 +83,7 @@
 .all-icons{
     width: 40%;
     display: flex;
-    justify-content:end;
+    justify-content:flex-end;
     color: var(--secondary-color);
 }
 

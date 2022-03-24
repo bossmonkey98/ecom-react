@@ -2,6 +2,12 @@ import { AccountCircleOutlined, FavoriteBorderOutlined, Search, ShoppingCartOutl
 import React from 'react'
 import logo from '../../assets/logo/apex-legends-symbol-white.png'
 import './Navbar.css'
+import { Routes, Link ,Route } from 'react-router-dom'
+import Home from '../../pages/home/Home'
+import { Cart } from '../../pages/Cart/Cart'
+import { Wishlist } from '../../pages/Wishlist/Wishlist'
+import {Login} from '../../pages/auth/Login'
+import {ProductListing} from '../../pages/Productlisting/ProductListing'
 
 function Navbar(){
   return(
@@ -12,8 +18,9 @@ function Navbar(){
             <span id="store-name">pex Store</span>
         </div>
         <div className="menu">
-            <span><a href="#">Home</a></span><span>
-                <a href="#">Products</a>
+            <span><Link to="/">Home</Link></span>
+            <span>
+               <Link to="/Products">Products</Link>
             </span>
         </div>
         <div className="nav-content">
@@ -23,17 +30,24 @@ function Navbar(){
           </div>  
             <div className='all-icons' >
               <div className="icon">
-                      <AccountCircleOutlined fontSize='large'/>
+                    <Link to="/Login"><AccountCircleOutlined fontSize='large'/></Link>
               </div>
               <div className="icon">
-                      <FavoriteBorderOutlined fontSize='large'/>
+                    <Link to="/Wishlist"><FavoriteBorderOutlined fontSize='large'/></Link>
               </div>
               <div className="icon">
-                    <ShoppingCartOutlined fontSize='large'/>
+                  <Link to= "/Cart"><ShoppingCartOutlined fontSize='large'/></Link>
               </div>
             </div>
         </div>
     </nav>
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/' element={<ProductListing/>}/>
+      <Route path='/' element={<Login/>}/>
+      <Route path='/' element={<Wishlist/>}/>
+      <Route path='/' element={<Cart/>}/>
+      </Routes>
     </div>
   )
 }
